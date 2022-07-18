@@ -1,19 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Student Quiz</title>
-    <link rel="stylesheet" href="./style.css"/>
-</head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="./style.css">
 
- <body>
-    <div class="container">
-        <h1 class="welcome">Student Quiz</h1>
-        <h2 id="countdown"></h2>
-    
+  <title>Code Quiz</title>
+</head>
+<header>
+  <h1><a href="./index.html">Code Quiz</a></h1>
+  <nav>
+      <ul>
+          <li><a href="./highscore.html">View High Scores</a></li>
+      </ul>
+  <nav>
+</header>
+<body>
+  <div id="timer" class="timer">
+  </div>
+  <main>
+    <div id="play-area">
+      <div id="welcome-screen">
+        <h1>Coding Quiz Challenge</h1>
+        <p>
+          Try to answer the following code-related questions within the time limit. Wrong answers will penalize your score/time limit!
+        </p>
+        <button id="start-btn" class="center">Start Quiz</button>
+      </div>
+
+      <div id="question-display" class="hidden question">
+        <div id="actual-question"></div> 
+        <div class="answer-choices">
+        <button id="answer1">Answer 1</button>
+        <button id="answer2">Answer 2</button>
+        <button id="answer3">Answer 3</button>
+        <button id="answer4">Answer 4</button>
+        <div class="hidden" id="motivation"></div>
+        </div>
+        
+      </div>
+
+      <div id="end-screen" class="hidden">
+        <h2>Game Over!</h2>
+        <p>Your final score is <span id="final-score"></span>.</p>
+        <p>
+          You Finished! <input type="text" id="initials" placeholder="Enter Initials Here">
+          <button id="save-score">Save Score</button>
+        </p>
+      </div>
     </div>
-   <script src="./script.js"></script> 
-    </body>
+
+
+  </main>
+
+  <script src="./script.js"></script>
+
+
+</body>
+
 </html>

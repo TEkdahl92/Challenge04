@@ -1,4 +1,71 @@
-.welcome {
-    text-align: center;
-    
+:root {
+    --offgrey:#ffffffce;
+}
+
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: maroon;
+    color: var(--offgrey);
+    display: flex;
+}
+
+header h1 {
+    font-size: 48px;
+}
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--offgrey);
+}
+main {
+    border: 3px solid #2a7c3e;
+    width: 500px;
+    margin: 100px 400px;
+    padding: 10px;
+}
+
+button {
+    margin: 10px;
+}
+
+.center {
+    margin: 20px 140px
+
+}
+
+.hidden {
+    display: none;
+}
+
+ .show {
+    display: block;
+ }
+
+.timer {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 25px;
+    margin-top: 25px;
+}
+
+.question {
+padding:25px;
 }
