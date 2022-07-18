@@ -1,3 +1,4 @@
+// created variables for everything I would need in this challenge
 var timerEl = document.getElementById('timer');
 var timeLeft = 60;
 var welcomeEl = document.querySelector('#welcome-screen');
@@ -10,7 +11,7 @@ var bt2 = document.querySelector('#answer2');
 var bt3 = document.querySelector('#answer3');
 var bt4 = document.querySelector('#answer4');
 
-
+// created the questions using a top 50 javascript questions site
 var questions = [
     {
         title: "What keyword is used to check whether a given property is valid or not?",
@@ -40,9 +41,9 @@ var questions = [
 ]
 var currentQuestion;
 
-//when strt btn clicked, 1st question revealed, remove welcome message
+//when strt btn clicked, 1st question revealed
 startBtn.addEventListener('click', startGame);
-// console.log('Game started!');
+
 
 function startGame(){
     startTimer();
@@ -84,10 +85,7 @@ if (currentQuestion === questions.length) {
     bt3.value = questions[currentQuestion].choices[2];
     bt4.textContent = questions[currentQuestion].choices[3];
     bt4.value = questions[currentQuestion].choices[3];
-    // console.log(bt1.value);
-    // console.log(bt2.value);
-    // console.log(bt3.value);
-    // console.log(bt4.value);
+    
     }
 };
 
